@@ -11,7 +11,7 @@
         <h3>{{placeHolder}}</h3>
         <br>
 
-        <input type="text" #inputText (keyup.enter)="onKey(inputText.value); inputText.value=''" (focusout)="onFocusOut()" (focus)="onFocusIn()">
+        <input class="input" type="text" #inputBar (input)="showData(inputBar)" (focusout)="onFocusOut()" (focus)="onFocusIn()">
 
         <br><br>
         <h4>Display text = {{ userText }}</h4>

@@ -14,12 +14,12 @@ export class Assignment1Component {
     console.log("Its working");
   }
 
-  onKey(text){
-    this.userText= text;
+  showData(text){
+    this.userText = text.value;
   }
 
   onFocusIn(){
-    this.placeHolder= "Press enter to display";
+    this.placeHolder= "Type anyting to display";
   }
 
   onFocusOut(){
